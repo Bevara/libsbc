@@ -1,0 +1,18 @@
+{
+    "name": "libsbc",
+    "description": "SBC (Bluetooth subband codec) decoder",
+    "filters":["sbcdec"],
+    "help": "This filter decodes raw SBC audio, the low-complexity subband codec of Bluetooth A2DP, using libsbc from BlueZ.",
+    "support": [
+        "audio"
+    ],
+    "sources":"https://bevara.ddns.net/sources/libsbc.accessor",
+    "filter_source":{
+        "sbcdec" : "dec_sbc.c"
+    },
+    "extension":{
+      "sbc" : "audio",
+      "msbc" : "audio"
+    },
+    "licence_required":false
+}
